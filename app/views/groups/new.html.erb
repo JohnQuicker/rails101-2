@@ -1,0 +1,36 @@
+<!-- <div class="col-md-4 col-md-offset-4">
+  <h2>新增讨论板</h2>
+  <hr>
+  <%= form_for @group do |f| %>
+  主题
+  <br>
+  <%= f.text_field :title  %>
+  <br>
+  <br>
+  讨论范畴说明
+  <br>
+  <%= f.text_area :description  %>
+  <br>
+  <br>
+  <%= f.submit "提交", :disable_with => '提交中……'  %>
+  <% end %>
+  <hr>
+</div> -->
+<div class="col-md-4 col-md-offset-4">
+    <h2>新增讨论版</h2>
+
+    <hr>
+    <%= form_for @group do |f| %>
+
+    标题
+    <%= f.text_field :title %>
+    <br>
+    叙述
+    <br>
+    <%= f.text_area :description %>
+    <br>
+
+    <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+    <% end %>
+
+</div>
