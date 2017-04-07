@@ -2,6 +2,15 @@
   <h2>新增讨论板</h2>
   <hr>
   <%= form_for @group do |f| %>
+
+  <% if @group.error.any? %>
+  <ul>
+    <% @group.error.full_message.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
+
   主题
   <br>
   <%= f.text_field :title  %>
