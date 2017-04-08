@@ -36,7 +36,15 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Johnquicker's add
+
+# 这是讨论区架构。
 gem 'bootstrap-sass'
+
+# 这是new与edit表单页的gem，不用的时候，可以自己写html
+gem 'simple_form'
+
+# devise是建立登录系统的gem
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
