@@ -46,6 +46,9 @@ gem 'simple_form'
 # devise是建立登录系统的gem
 gem 'devise'
 
+# 建立分页系统
+gem 'will_paginate'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
