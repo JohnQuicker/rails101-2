@@ -20,7 +20,7 @@ before_action :authenticate_user! , only: [:new, :create]
     # @group = Group.show(params[:id])
     @group = Group.find(params[:id])
     # @posts = @group.posts.order("created_at, DESC")
-    @posts = @group.posts.order("created_at DESC")
+    @posts = @group.posts.recent
   end
 
   def create
